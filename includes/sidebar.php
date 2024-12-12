@@ -17,7 +17,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="home.php">
                     <i class="fas fa-gauge-high"></i>
-                    <span>Home</span></a>
+                    <span>Inicio</span></a>
             </li>
 
             <!-- Divider -->
