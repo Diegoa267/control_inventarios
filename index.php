@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Diego</title>
+    <title>Control Inventarios</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +29,7 @@
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
-            <div class="col-xl-10 col-lg-12 col-md-9">
+            <div class="col-xl-15 col-lg-12 col-md-9">
 
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
@@ -74,7 +74,8 @@
                                         <button type="submit" class="btn btn-primary btn-user btn-block">Acceder</button>
                                         </form>
 
-                                        <!-- credenciales autenticaciòn de Google OAuth2.0 -->
+                                        <!-- credenciales autenticaciòn de Google OAuth2.0
+
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -82,7 +83,8 @@
                                         <a href="index.html" class="btn btn-facebook btn-user btn-block">
                                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                         </a>
-                                        <!-- END OAuth  2.0 -->
+                                        
+                                        END OAuth  2.0 -->
                                    
 
                                     <?php if (isset($_GET['error'])): ?>
@@ -107,7 +109,7 @@
 
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Olvide mi contraseña?</a>
+                                        <a class="medium" href="forgot-password.html">Olvidé mi contraseña</a>
                                     </div>
                                     
                                 </div>
