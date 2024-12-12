@@ -82,7 +82,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gestiones de movimientos</h6>
                         <a class="collapse-item" href="nuevoMovimiento.php">Entrada/Salida Productos</a>                        
-                        <a class="collapse-item" href="consulta_movimientos.php">Consulta de moviemientos</a>                                        
+                        <a class="collapse-item" href="consulta_movimientos.php">Consultar Moviemientos</a>                                        
                     </div>
                 </div>
             </li>

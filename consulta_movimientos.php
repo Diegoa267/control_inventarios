@@ -30,40 +30,33 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Lista de Movimientos</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>id_producto</th>
-                                            <th>Producto</th>
-                                            <th>Descripción</th>
+                                            <th>Movimiento #</th>                                                                                        <th>Tipo Movimiento</th>
+                                            <th>Tipo Movimiento</th>
                                             <th>Cantidad</th>
-                                            <th>Precio Unitario</th>
-                                            <th>Categoría</th>
-                                            <th>Proveedor</th>
-                                            <th>Fecha Ingreso</th>
-                                            <th>Estado</th>
+                                            <th>Fecha</th>
+                                            <th>Observación</th>                                            
                                         </tr>
-
                                     </thead>
+                                    
                                     <tfoot>
-                                        <tr>
-                                            <th>id_producto</th>
-                                            <th>Producto</th>
-                                            <th>Descripción</th>
-                                            <th>Cantidad</th>
-                                            <th>Precio Unitario</th>
-                                            <th>Categoría</th>
-                                            <th>Proveedor</th>
-                                            <th>Fecha Ingreso</th>
-                                            <th>Estado</th>
+                                    <tr>
+                                        <th>Movimiento #</th>                                                                                        <th>Tipo Movimiento</th>
+                                        <th>Tipo Movimiento</th>
+                                        <th>Cantidad</th>
+                                        <th>Fecha</th>
+                                        <th>Observación</th>                                            
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php include("control_inventario/selecttableInventario.php") ?>
+
+                                        <?php include("ControlMovimientos/selecttableMovimiento.php") ?>
                                 </table>
                             </div>
                         </div>
