@@ -22,7 +22,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Nuevo Producto</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Nuevo Movimiento</h1>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -32,7 +32,7 @@
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Inventario</h6>
 
-                            <!-- modal -->
+<!-- modal -->
 
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nuevo Producto</button>
                                 
@@ -40,73 +40,64 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Nuevo Producto</h1>
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar Nuevo Movimiento</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
 
                                     <div class="modal-body">
-                                        <form action="control_inventario/createInventarios.php" method="POST">
-                                            <div class = "mb-3">
-                                                <label for="producto">Producto:</label>
-                                                <input type="text" name="producto" class="form-control" require>
-                                            </div>
+                                        <form action="ControlMovimientos/createMovimiento.php" method="POST">
+                                            
+                                            <!-- SELECT DE PRODUCTO -->
 
-                                            <div class = "mb-3">
-                                                <label for="descripcion">Descripción:</label>
-                                                <input type="text" name="descripcion" class="form-control" require>
-                                            </div>
-
-                                            <div class= "mb-3">
-                                                <label for="cantidad">Cantidad:</label>
-                                                <input type="number" name="cantidad" class="form-control" require>
-                                            </div>
-                                    
-                                            <div class= "mb-3">
-                                                <label for="precio_unitario">Precio:</label>
-                                                <input type="number" step="0.01" name="precio_unitario" class="form-control" require>
-                                            </div>
-                                            <!-- SELECT DE CATEGORIAS -->
                                             <div class= "mb-3">
                                              <?php
-                                              $query = "SELECT id_categoria, nombre_cat FROM categorias";
+                                              $query = "SELECT id_producto, producto FROM inventario";
                                               $result = $conn->query($query);
 
                                               if($result->num_rows>0){
-                                                echo '<label for="categoria">Categorías:</label>';
-                                                echo '<select name="categoria" class="form-select" >';
+                                                echo '<label for="producto">Producto:</label>';
+                                                echo '<select name="producto" class="form-select" >';
                                                 while($row = $result->fetch_assoc()){
-                                                    echo '<option value="'.$row['id_categoria'].'">'.$row['nombre_cat'].'</option>';
+                                                    echo '<option value="'.$row['id_producto'].'">'.$row['producto'].'</option>';
                                                 }
                                                 echo '</select>';
                                               } else{
-                                                echo 'No hay categorías';
+                                                echo 'No hay productos';
                                               }
                                              ?>
                                             </div>
-                                            <!-- END SELECT CATEGORIAS
 
-                                            SELECT DE PROVEEDORES -->  
+                                            <!-- END SELECT PRODUCTO
+
+                                            SELECT DE MOVIMIENTOS -->  
                                                                                        
                                             <div class= "mb-3"><?php
-                                              $query = "SELECT id_proveedor, nombre_prov FROM proveedores";
+                                              $query = "SELECT DISTINCT tipo_movimiento FROM movimientos";
                                               $result = $conn->query($query);
 
                                               if($result->num_rows>0){
-                                                echo '<label for="proveedor">Proveedor:</label>';
-                                                echo '<select name="proveedor" class="form-select" >';
+                                                echo '<label for="tipo_movimiento">Tipo:</label>';
+                                                echo '<select name="tipo_movimiento" class="form-select" >';
                                                 while($row = $result->fetch_assoc()){
-                                                    echo '<option value="'.$row['id_proveedor'].'">'.$row['nombre_prov'].'</option>';
+                                                    echo '<option value="'.$row['id_movimiento'].'">'.$row['tipo_movimiento'].'</option>';
                                                 }
                                                 echo '</select>';
                                               } else{
-                                                echo 'No hay proveedores';
+                                                echo 'No hay movimientos';
                                               }
                                              ?>                                     
                                             </div>
+                                           
                                             <!-- END SELECT PROVEEDORES -->
+
                                             <div class= "mb-3">
-                                                <label for="estado">Estado</label>
-                                                <input type="text" name="estado" class="form-control" require>
+                                                <label for="cantidad">Cantidad:</label>
+                                                <input type="number"name="cantidad" class="form-control" require>
+                                            </div>
+
+                                            <div class= "mb-3">
+                                                <label for="observacion">Descripción:</label>
+                                                <textarea name="observacion" class="form-control" require></textarea>
                                             </div>
 
                                         </div>

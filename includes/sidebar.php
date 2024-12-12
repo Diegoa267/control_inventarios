@@ -15,7 +15,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="home.php">
                     <i class="fas fa-gauge-high"></i>
                     <span>Home</span></a>
             </li>
@@ -81,8 +81,7 @@
                 <div id="menu3" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gestiones de movimientos</h6>
-                        <a class="collapse-item" href="#">Entrada de productos</a>
-                        <a class="collapse-item" href="#">Salida de productos</a>
+                        <a class="collapse-item" href="nuevoMovimiento.php">Entrada/Salida Productos</a>                        
                         <a class="collapse-item" href="#">Consulta de moviemientos</a>                                        
                     </div>
                 </div>
