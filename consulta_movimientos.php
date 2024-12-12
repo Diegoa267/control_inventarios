@@ -21,12 +21,16 @@
             <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <h1 class="h3 mb-4 text-gray-800">Eliminar Producto</h1>
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Consultar Movimientos</h1>
 
-                 <!-- DataTales Example -->
-                 <div class="card shadow mb-4">
+                </div>
+                <!-- /.container-fluid -->
+
+                <!-- DataTales Example -->
+                <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Seleccione uno de los elementos a eliminar</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -42,8 +46,8 @@
                                             <th>Proveedor</th>
                                             <th>Fecha Ingreso</th>
                                             <th>Estado</th>
-                                            <th>Operación</th>
                                         </tr>
+
                                     </thead>
                                     <tfoot>
                                         <tr>
@@ -56,21 +60,14 @@
                                             <th>Proveedor</th>
                                             <th>Fecha Ingreso</th>
                                             <th>Estado</th>
-                                            <th>Operación</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <?php include("control_inventario/selecttableInventarioDelete.php") ?>
+                                        <?php include("control_inventario/selecttableInventario.php") ?>
                                 </table>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Eliminar Producto</h1>
-
-                </div>
-                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->

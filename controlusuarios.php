@@ -22,15 +22,14 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Control de Usuarios</h1>
-                    <p class="mb-4">Sistema de Integración y Administración de Usuarios <a target="_blank"
+                    <p class="mb-4">Integración y Administración de Usuarios <a target="_blank"
                             href="https://wa.link/l2284e">Soporte</a>.</p>
 
                     
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Registro de Usuarios Activos</h6>
-
+                            
                             <!-- Aquí va el modal -->
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Nuevo Usuario</button>
@@ -60,8 +59,8 @@
                                             </div>
                                         </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" name="submit" class="btn btn-primary">Crear</button>
                                     </div>
                                         </form>
                                     </div>

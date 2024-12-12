@@ -66,12 +66,12 @@ if(isset($_POST['submit'])){
 
             <div class="mb-3">
                 <label for="name">Categoría</label>
-                <input type="text" name="categoria" class="form-control" value="<?php echo $inventario['categoria']; ?>" require>
+                <input type="text" name="categoria" class="form-control" value="<?php echo $inventario['id_categoria']; ?>" require>
             </div>
 
             <div class="mb-3">
                 <label for="name">Proveedor</label>
-                <input type="text" name="proveedor" class="form-control" value="<?php echo $inventario['proveedor']; ?>" require>
+               <input type="text" name="proveedor" class="form-control" value="<?php echo $inventario['id_proveedor']; ?>" require>
             </div>
 
             <div class="mb-3">
@@ -79,7 +79,7 @@ if(isset($_POST['submit'])){
                 <input type="text" name="estado" class="form-control" value="<?php echo $inventario['estado']; ?>" require>
             </div>
             
-            <button type="submit" name="submit" class="btn btn-success">Actualizar cambios</button>
+            <button type="submit" name="submit" class="btn btn-success">Actualizar</button>
 
          </form>
 

@@ -33,7 +33,7 @@ proveedores AS prov ON inv.id_proveedor = prov.id_proveedor;";
 <!--buttons-->
    
 <td>    
- <a href="control_inventario/updateInventario.php?id=<?php echo $row['id_producto']; ?>" class="btn btn-warning" >Actualizar</a>
+ <a href="control_inventario/updateInventario.php?id=<?php echo $row['id_producto']; ?>" class="btn btn-success" >Editar</a>
 </td>
    
   </tr>
