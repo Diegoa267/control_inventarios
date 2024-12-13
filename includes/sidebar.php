@@ -57,7 +57,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gestión de inventario</h6>
-                        <a class="collapse-item" href="#">Control de categorías</a>
+                        <a class="collapse-item" href="mostrar_categorias.php">Control de categorías</a>
                         <a class="collapse-item" href="#">Control de proveedores</a>
                     </div>
                 </div>
