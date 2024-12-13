@@ -38,8 +38,8 @@
                 <div id="menu1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Inventario</h6>
-                        <a class="collapse-item" href="nuevo_producto.php">Nuevo Producto</a>
                         <a class="collapse-item" href="mostrar_producto.php">Mostrar Productos</a>
+                        <a class="collapse-item" href="nuevo_producto.php">Nuevo Producto</a>                        
                         <a class="collapse-item" href="editar_producto.php">Editar Productos</a>
                         <a class="collapse-item" href="eliminar_producto.php">Eliminar Productos</a>
                     </div>
@@ -58,7 +58,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gestión de inventario</h6>
                         <a class="collapse-item" href="mostrar_categorias.php">Control de categorías</a>
-                        <a class="collapse-item" href="#">Control de proveedores</a>
+                        <a class="collapse-item" href="mostrar_proveedores.php">Control de proveedores</a>
                     </div>
                 </div>
             </li>
