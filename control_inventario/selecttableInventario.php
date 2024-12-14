@@ -31,12 +31,16 @@ proveedores AS prov ON inv.id_proveedor = prov.id_proveedor;";
    <td><?php echo $row['proveedor']; ?></td>
    <td><?php echo $row['fecha_ingreso']; ?></td>
    <td><?php echo $row['estado']; ?></td>
-   <!--buttons-->
-   <!--
+
+<!--buttons-->
+
+<!--
+
 <td>    
    <a href="controlUsuarios/updateUsuarios.php?id=<?php echo $row['id']; ?>" class="btn btn-warning" data-bs-target="#updatemodal" data-bs-whatever="@mdo">Editar</a>
     <a href="controlUsuarios/deleteUsuarios.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Eliminar</a>
 </td>
-   -->
+
+-->
   </tr>
  <?php } ?>

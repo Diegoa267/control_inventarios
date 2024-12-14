@@ -3,7 +3,7 @@
 
 <body id="page-top">
 
-    <!-- Page Wrapper -->
+<!-- Page Wrapper -->
     <div id="wrapper">
 
 <!-- Aquí va sidebar -->
@@ -19,18 +19,19 @@
  <?php include("includes/topbar.php") ?>
 
 
-                <!-- Begin Page Content -->
+<!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
+<!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Panel Principal</h1>
                     </div>
 
-                    <!-- Content Row -->
+<!-- Content Row -->
                     <div class="row">
 
 <!-- Earnings (Monthly) Card Example -->
+
 <!-- TARJETA PRECIO TOTAL -->
 <?php
 $query = "SELECT SUM(cantidad*precio_unitario) AS Total FROM inventario";
@@ -38,7 +39,7 @@ $result = $conn->query($query);
 
 if($fila= $result->fetch_assoc()) {
    echo '
-<div class="col-xl-3 col-md-6 mb-4">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -64,6 +65,7 @@ if($fila= $result->fetch_assoc()) {
 <!-- END -->
 
 <!-- Earnings (Monthly) Card Example -->
+
 <!-- TARJETA PRODUCTOS DISPONIBLES -->
 <?php
 $query = "SELECT SUM(cantidad) AS total_productos FROM inventario";
@@ -95,6 +97,7 @@ if($fila= $result->fetch_assoc()) {
 <!-- END -->
 
 <!-- Earnings (Monthly) Card Example -->
+
 <!-- TARJETA TOTAL DE CATEGORÍAS --> 
 <?php
 $query = "SELECT COUNT(id_categoria) AS total_categorias FROM categorias";
@@ -126,6 +129,7 @@ if($fila= $result->fetch_assoc()) {
 <!-- END -->
 
 <!-- Earnings (Monthly) Card Example -->
+
 <!-- TARJETA TOTAL DE PROVEEDORES --> 
 <?php
 $query = "SELECT COUNT(id_proveedor) AS total_proveedores FROM proveedores";
@@ -157,6 +161,7 @@ if($fila= $result->fetch_assoc()) {
 <!-- END -->
 
 <!-- Earnings (Monthly) Card Example -->
+
 <!-- TARJETA POR CATEGORIA --> 
 <?php
 $query = "SELECT c.nombre_cat, SUM(i.cantidad*i.precio_unitario) AS totalxcat
@@ -192,6 +197,7 @@ if($fila= $result->fetch_assoc()) {
 <!-- END -->
 
 <!-- Earnings (Monthly) Card Example -->
+
 <!-- TARJETA POR CATEGORIA --> 
 <?php
 $query = "SELECT c.nombre_cat, SUM(i.cantidad*i.precio_unitario) AS totalxplo
@@ -264,10 +270,12 @@ if($fila= $result->fetch_assoc()) {
 <script type="text/javascript" src="script_graficos/ColumnChart.js"></script>
 
 <!-- Grafico Pie -->
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="script_graficos/ColumnChart.js"></script>
 
 <script type="text/javascript">
+    
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(dibujarGrafico);
 
@@ -282,7 +290,7 @@ if($fila= $result->fetch_assoc()) {
                         //Opciones del grafico 
                      //Opciones del grafico 
                      var options = {
-                    title: 'Cantidad de productos vendidos',
+                    title: 'Total de productos por categoría',
                     hAxis: {title: 'Producto'},
                     vAxis: {title: 'Cantidad'},
                     legend: {position: 'none'},
@@ -300,7 +308,8 @@ if($fila= $result->fetch_assoc()) {
       }
     </script>
 
-    <!-- TERMINA GRÁFICO -->
+<!-- TERMINA GRÁFICO -->
+
      <!-- GRAFICO 3 -->
 
                     <div class="row">
@@ -311,7 +320,7 @@ if($fila= $result->fetch_assoc()) {
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Vista de Inventarios</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Gráfico de Pie</h6>
                                     <div class="dropdown no-arrow"></div>
                                 </div>
                                 <!-- Card Body -->
@@ -324,13 +333,14 @@ if($fila= $result->fetch_assoc()) {
 <!-- INICIA GRAFICO -->
 <!-- GRAFICO -->
 
+
                     <!-- Pie Chart -->
                         <div class="col-xl-6 col-lg-5">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Inventario</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Gráfico de Barras</h6>
                                     <div class="dropdown no-arrow">
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">

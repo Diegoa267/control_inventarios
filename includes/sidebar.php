@@ -87,12 +87,31 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Charts -->
+            <!-- Nav Item Reportes DropDown -->
+
+             <!-- Heading -->
+            <div class="sidebar-heading">
+                Reportes
+            </div>
+
+            <!-- Nav Item - Reportes -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Reportes</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#menu4"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-store"></i>
+                    <span>Generar Reporte</span>
+                </a>
+                <div id="menu4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header"></h6>
+                        <a class="collapse-item" href="pdfs/Productospdf.php">Productos</a>
+                        <a class="collapse-item" href="pdfs/Categoriaspdf.php">Categorías</a>                        
+                        <a class="collapse-item" href="pdfs/Provpdf.php">Proveedores</a>
+                        <a class="collapse-item" href="pdfs/Usuariospdf.php">Usuarios</a>
+                    </div>
+                </div>
             </li>
+            <!-- Termina Nav Reportes DropDown -->
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
